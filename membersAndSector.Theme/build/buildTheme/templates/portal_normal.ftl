@@ -5,7 +5,7 @@
 <html class="${root_css_class}" dir="<@liferay.language key="lang.dir" />" lang="${w3c_language_id}">
 
 <head>
-    <title>${the_title} - ${company_name}</title>
+    <title>${company_name}</title>
 
     <meta content="initial-scale=1.0, width=device-width" name="viewport" />
 
@@ -83,6 +83,7 @@
     <link rel="stylesheet" type="text/css" href="${javascript_folder}/css/layout.min.css?v=2" />
     <link rel="stylesheet" type="text/css" href="${javascript_folder}/css/activity-manage.min.css" />
     <script src="${javascript_folder}/layui.js"></script>
+    <script src="${javascript_folder}/layui_modal.js"></script>
     <link rel="stylesheet" href="${javascript_folder}/bootstrap.min.css" />
 </head>
 <body class="${css_class}">
