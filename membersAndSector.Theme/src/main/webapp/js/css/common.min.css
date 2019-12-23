@@ -101,8 +101,11 @@ body .layui-laydate .layui-this {
 }
 
 .table_outer_box {
-    height: calc(100% - 72px - 6.29vh);
+    height: calc(100% - 66px);
     position: relative;
+}.table_outer_box .layui-table {
+     height: 100%;
+     margin: 0;
 }
 
 .table_outer_box .fixed_thead {
@@ -139,6 +142,9 @@ body .layui-laydate .layui-this {
     display: inline-block;
     font-size: 16px!important;
     font-family: Microsoft YaHei!important;
+}
+.table_outer_box .layui-table td p{
+    margin: 0;!important;
 }
 
 .bg_white_container .pagination_container{
@@ -209,6 +215,9 @@ body .layui-laydate .layui-this {
     background: #e5e5e5
 }
 
+.table_form_content .custom_table + .layui-table-view .layui-table-box .layui-table-body  tr{
+    display: table-row;
+}
 .table_form_content .custom_table + .layui-table-view .layui-table-box .layui-table-body {
     height: calc(100% - 40px) !important
 }
@@ -602,7 +611,7 @@ body .layui-layer-prompt .layui-layer-input {
 .table_outer_box > table tbody {
     display: block;
     height: calc(100% - 48px);
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .table_outer_box > table thead, tbody tr {
@@ -613,4 +622,7 @@ body .layui-layer-prompt .layui-layer-input {
 
 .table_outer_box > table thead {
     width: 100%;
+    height: 48px;
+    color: #333;
+    font-weight: bold;
 }
